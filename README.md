@@ -1,2 +1,2 @@
 # seattle
-http://www.youngheart.wang
+http://seattlewang.github.io/seattle
