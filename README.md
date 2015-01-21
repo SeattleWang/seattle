@@ -1,3 +1,3 @@
 # seattle
 ### http://seattlewang.github.io/seattle
-![](https://github.com/SeattleWang/seattle/master/shexian.JPG) 
+![](https://github.com/SeattleWang/seattle/tree/master/shexian.JPG) 
