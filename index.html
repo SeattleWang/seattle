@@ -1,141 +1,124 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-    <head>
-        <title>Seattle</title>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="Slicebox - 3D Image Slider with Fallback" />
-        <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
-		<meta name="author" content="Pedro Botelho for Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
-		<link rel="stylesheet" type="text/css" href="css/custom.css" />
-		<style>
-		h1 {
-			margin-top: 100px;
-			font-family: 'Microsoft Yahei';
-			font-size: 36px;
-			color: #019157;
-		}
-		</style>			
-		<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>江南小筑</title>
+		<link rel="stylesheet" type="text/css" href="css/jq22.css" />
 	</head>
 	<body>
 		<div class="container">
-			<h1>Seattle's World</h1>
-			
-			<div class="more">
-				<ul id="sb-examples">
-					<!-- <li><a href="index.html">效果一</a></li>
-					<li><a href="index2.html">效果二</a></li>
-					<li><a href="index3.html">效果三</a></li>
-					<li class="selected"><a href="index4.html">效果四</a></li> -->
-					<li>Email: <a href="http://outlook.com" target="_blank">myseattle@outlook.com</a></li>
-				</ul>
-			</div>
-				<h3 style="color:#E48CCD"><center>Let life be beautiful like summer flowers and death like autumn leaves. </center></h3>
-
-			<div class="wrapper">
-
-				<ul id="sb-slider" class="sb-slider">
-					<li>
-						<img src="images/1.jpg" alt="image1"/>
-						<div class="sb-description">
-							<h3>dandelion</h3>
-						</div>
-					</li>
-					<li>
-						<img src="images/sanyang.jpg" alt="sanyang"/>
-						<div class="sb-description">
-							<h3>San Yang</h3>
-						</div>
-					</li>
-					<li>
-						<img src="images/4.jpg" alt="Autumn"/>
-						<div class="sb-description">
-							<h3>Autumn</h3>
-						</div>
-					</li>
-					<!--
-					<li>
-						<img src="images/shanghai.jpg" alt="Shang Hai"/>
-						<div class="sb-description">
-							<h3>Shang Hai</h3>
-						</div>
-					</li>
-					-->
-					<li>
-						<img src="images/3.jpg" alt="yearning"/>
-						<div class="sb-description">
-							<h3>yearning</h3>
-						</div>
-					</li>
-				</ul>
-
-				<div id="shadow" class="shadow"></div>
-
-				<div id="nav-arrows" class="nav-arrows">
-					<a href="#">Next</a>
-					<a href="#">Previous</a>
-				</div>
-
-			</div><!-- /wrapper -->
-			
-		</div>
-		<script type="text/javascript" src="http://cdn.staticfile.org/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
-		<script type="text/javascript">
-			$(function() {
+			<div class="grid">
 				
-				var Page = (function() {
-
-					var $navArrows = $( '#nav-arrows' ).hide(),
-						$shadow = $( '#shadow' ).hide(),
-						slicebox = $( '#sb-slider' ).slicebox( {
-							onReady : function() {
-
-								$navArrows.show();
-								$shadow.show();
-
-							},
-							orientation : 'r',
-							cuboidsRandom : true,
-							disperseFactor : 30
-						} ),
-						
-						init = function() {
-
-							initEvents();
-							
-						},
-						initEvents = function() {
-
-							// add navigation events
-							$navArrows.children( ':first' ).on( 'click', function() {
-
-								slicebox.next();
-								return false;
-
-							} );
-
-							$navArrows.children( ':last' ).on( 'click', function() {
-								
-								slicebox.previous();
-								return false;
-
-							} );
-
-						};
-
-						return { init : init };
-
-				})();
-
-				Page.init();
-
-			});
-		</script>
+				<figure class="effect-sadie">
+					<img src="img/beihai.JPG" alt="a.jpg"/>
+			  		<figcaption>
+						<h3>北海 <span>涠洲岛</span></h3>
+						<p>这是一个历史悠久的岛屿，也是广西最大的海岛。<br/>这里的生活很慢，还有一座古老的天主教堂。</p>
+                    </figcaption>			
+				</figure>
+				<figure class="effect-oscar">
+					<img src="img/yingtan.jpg" alt="img08"/>
+			  		<figcaption>
+						<h3>北海 <span>银滩</span></h3>
+						<p>这里有一片很大的沙滩。<br/>可以尽情的玩耍，游泳。老城区的海鲜好吃而又便宜。</p>
+                    </figcaption>			
+				</figure>
+				<figure class="effect-lily">
+					<img src="img/lijiang.jpg" alt="img01"/>
+			  		<figcaption>
+						<h3>阳朔 <span>遇龙河</span></h3>
+						<p>遇龙河是漓江在阳朔境内最长的一条支流。<br/>竹筏漂流是这里的一大特色。</p>
+              		</figcaption>			
+				</figure>
+				<figure class="effect-layla">
+					<img src="img/qinghaihu.jpg" alt="img04"/>
+			  		<figcaption>
+						<h3>青海湖 <span></span></h3>
+						<p>位于海南藏族自治州的这片青海湖。</p>
+                    </figcaption>			
+				</figure>
+				<figure class="effect-zoe">
+					<img src="img/qinghaicaihong.jpg" alt="img14"/>
+			  		<figcaption>
+						<h3>青海湖 <span>金沙湾</span></h3>
+						<!--<span class="icon-heart"></span>
+						<span class="icon-eye"></span>
+						<span class="icon-paper-clip"></span>-->
+						<p>从金沙湾往黑马河镇方向出发时，偶遇彩虹。</p>
+                    </figcaption>			
+				</figure>
+				<figure class="effect-dexter">
+					<img src="img/qiliancaoyuan.jpg" alt="img12"/>
+			  		<figcaption>
+						<h3>青海湖 <span>蒙古包</span></h3>
+						<p>游牧的人们，带着蒙古包去周游这片世界。</p>
+                    </figcaption>			
+				</figure>
+				<figure class="effect-marley">
+					<img src="img/qianlianshan.jpg" alt="img09"/>
+			  		<figcaption>
+						<h3>海北藏族自治州 <span>祁连山脉</span></h3>
+						<p>这是一片常年积雪的山脉。</p>
+                    </figcaption>			
+				</figure>
+				
+				<figure class="effect-ruby">
+					<img src="img/zhangyedanxia.jpg" alt="img10"/>
+			  		<figcaption>
+						<h3>张掖 <span>七彩丹霞</span></h3>
+						<p>这里的丘陵造型奇特，色彩斑斓。</p>
+                    </figcaption>			
+				</figure>
+				<figure class="effect-roxy">
+					<img src="img/guilin.jpg" alt="img03"/>
+			  		<figcaption>
+						<h3>桂林 <span></span></h3>
+						<p>这是在冠岩去往阳朔的路上。</p>
+                    </figcaption>			
+				</figure>
+				<figure class="effect-bubba">
+					<img src="img/qiandaohu.jpg" alt="img06"/>
+			  		<figcaption>
+						<h3>淳安 <span>千岛湖</span></h3>
+						<p>在梅峰岛上，可以俯视大片的岛屿。</p>
+                    </figcaption>			
+				</figure>
+				<figure class="effect-romeo">
+					<img src="img/taihu.jpg" alt="img05"/>
+			  		<figcaption>
+						<h3>无锡 <span>太湖</span></h3>
+						<p>这是在鼋头渚。</p>
+                    </figcaption>			
+				</figure>
+				<figure class="effect-honey">
+					<img src="img/chakayanhu.JPG" alt="img07"/>
+			  		<figcaption>
+						<h3>海西蒙古族藏族自治州 <span>茶卡盐湖</span></h3>
+						<p>盐湖可以投映出身影，犹如一面镜子。</p>
+                    </figcaption>			
+				</figure>
+				<figure class="effect-sarah">
+					<img src="img/dongjidao.jpg" alt="img13"/>
+			  		<figcaption>
+						<h3>舟山 <span>东极岛</span></h3>
+						<p>看过后会无期的就知道这个岛屿了。</p>
+                    </figcaption>			
+				</figure>
+				<figure class="effect-chico">
+					<img src="img/qingbangdao.jpg" alt="img15"/>
+			  		<figcaption>
+						<h3>舟山 <span>青浜岛</span></h3>
+						<p>这是一座偏静的小岛。<br/>车马邮件都很慢。</p>
+                    </figcaption>			
+				</figure>
+				<figure class="effect-milo">
+					<img src="img/huangpujiang.jpg" alt="img11"/>
+			  		<figcaption>
+						<h3>上海 <span>外白渡桥</span></h3>
+						<p>这是一座浮在黄浦江上久远的铁桥。</p>
+                    </figcaption>			
+				</figure>
+			</div>
+		</div>
 	</body>
-</html>	
+</html>
