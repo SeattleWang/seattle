@@ -4,11 +4,35 @@
 		<meta charset="utf-8">
 		<title>江南小筑</title>
 		<link rel="stylesheet" type="text/css" href="css/jq22.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<style>
+			h1,h2,h3{ line-height:40px} 
+		</style>
 	</head>
 	<body>
-		<div class="container">
-			<div class="grid">
-				
+		<div id="bg">
+			<img class="bg" id="bg_04" src="images/menu/04.jpg">
+			<img class="bg" id="bg_01" src="images/menu/01.jpg">
+			<img class="bg" id="bg_02" src="images/menu/02.jpg">
+			<img class="bg" id="bg_03" src="images/menu/03.jpg">
+		</div>
+		<div  id="header">
+			<div id="header_nav">
+			   <ul id="header_menu_list">
+				   <li class="header_menu_list header_menu_list_checked header_menu_list_fi"><a href="#" id="menu-home">Home</a></li>
+				   <li class="header_menu_list"><span></span><a href="#" id="menu-travel">旅行</a></li>
+				   <li class="header_menu_list"><span></span><a href="#" id="menu-reading">读书</a></li>
+				   <li class="header_menu_list"><span></span><a href="#" id="menu-writing">写作</a></li>
+				   <li class="header_menu_list"><span></span><a href="#" id="menu-about">关于</a></li>
+				   <div class="clear"></div>
+			   </ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/common.js"></script>
+		<div style="text-align:center; font:normal 14px/24px 'MicroSoft YaHei';" class="container" >
+			
+			<div class="grid"  id="div-travel" style="display:none;">
 				<figure class="effect-sadie">
 					<img src="img/beihai.jpg" alt="Seattle"/>
 			  		<figcaption>
@@ -34,7 +58,7 @@
 					<img src="img/qinghaihu.jpg" alt="Seattle"/>
 			  		<figcaption>
 						<h3>青海湖 <span></span></h3>
-						<p>位于海南藏族自治州的这片青海湖。</p>
+						<p>位于海南藏族自治州的这片青海湖，<br/>清澈见底。</p>
                     </figcaption>			
 				</figure>
 				<figure class="effect-zoe">
@@ -119,6 +143,83 @@
                     </figcaption>			
 				</figure>
 			</div>
-		</div>
+			
+			<!--reading-->
+			<div id="div-reading" style="display:none;padding: 50px;">
+			<h1>青春</h1>
+			<h2>席慕容</h2>
+			<h3>所有的结局都已写好 </h3>
+			<h3>所有的泪水也都已启程 </h3>
+			<h3>却忽然忘了是怎麽样的一个开始 </h3>
+			<h3>在那个古老的不再回来的夏日 </h3>
+			<h3>无论我如何地去追索 </h3>
+			<h3>年轻的你只如云影掠过 </h3>
+			<h3>而你微笑的面容极浅极淡 </h3>
+			<h3>逐渐隐没在日落后的群岚 </h3>
+			<h3>遂翻开那发黄的扉页 </h3>
+			<h3>命运将它装订得极为拙劣 </h3>
+			<h3>含著泪 我一读再读 </h3>
+			<h3>却不得不承认 </h3>
+			<h3>青春是一本太仓促的书 </h3>
+			</div>
+			
+			<!--writing-->
+			<div id="div-writing" style="display:none;padding: 20px;">
+				<h3>还有好多故事在路中。。。。。。。。。。。。。。</h3>
+				
+			</div>
+			
+			<!--about-->
+			<div id="div-about" style="display:none;padding: 20px;">
+				<h3>等待更新。。。。。。。。。。。。。。</h3>
+			</div>
+		</div>	
 	</body>
+	<script>
+		$("#menu-home").on("click",function(){
+			$(".header_menu_list").removeClass("header_menu_list_checked");
+			$(this).parent().addClass("header_menu_list_checked");
+			$("#bg").show();
+			$("#div-travel").hide();
+			$("#div-reading").hide();
+			$("#div-writing").hide();
+			$("#div-about").hide();
+		});
+		$("#menu-travel").on("click",function(){
+			$(".header_menu_list").removeClass("header_menu_list_checked");
+			$(this).parent().addClass("header_menu_list_checked");
+			$("#bg").hide();
+			$("#div-travel").show();
+			$("#div-reading").hide();
+			$("#div-writing").hide();
+			$("#div-about").hide();
+		});
+		$("#menu-reading").on("click",function(){
+			$(".header_menu_list").removeClass("header_menu_list_checked");
+			$(this).parent().addClass("header_menu_list_checked");
+			$("#bg").hide();
+			$("#div-travel").hide();
+			$("#div-reading").show();
+			$("#div-writing").hide();
+			$("#div-about").hide();
+		});
+		$("#menu-writing").on("click",function(){
+			$(".header_menu_list").removeClass("header_menu_list_checked");
+			$(this).parent().addClass("header_menu_list_checked");
+			$("#bg").hide();
+			$("#div-travel").hide();
+			$("#div-reading").hide();
+			$("#div-writing").show();
+			$("#div-about").hide();
+		});
+		$("#menu-about").on("click",function(){
+			$(".header_menu_list").removeClass("header_menu_list_checked");
+			$(this).parent().addClass("header_menu_list_checked");
+			$("#bg").hide();
+			$("#div-travel").hide();
+			$("#div-reading").hide();
+			$("#div-writing").hide();
+			$("#div-about").show();
+		});
+	</script>
 </html>
