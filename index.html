@@ -11,17 +11,16 @@
 		</style>
 	</head>
 	<body>
-		<!--
 		<div id="bg">
 			<img class="bg" id="bg_04" src="images/menu/04.jpg">
 			<img class="bg" id="bg_01" src="images/menu/01.jpg">
 			<img class="bg" id="bg_02" src="images/menu/02.jpg">
 			<img class="bg" id="bg_03" src="images/menu/03.jpg">
-		</div>-->
+		</div>
 		<div  id="header">
 			<div id="header_nav">
 			   <ul id="header_menu_list">
-				   <!--<li class="header_menu_list header_menu_list_checked header_menu_list_fi"><a href="#" id="menu-home">Home</a></li>-->
+				   <li class="header_menu_list header_menu_list_checked header_menu_list_fi"><a href="#" id="menu-home">Home</a></li>
 				   <li class="header_menu_list"><span></span><a href="#" id="menu-travel">旅行</a></li>
 				   <li class="header_menu_list"><span></span><a href="#" id="menu-reading">读书</a></li>
 				   <li class="header_menu_list"><span></span><a href="#" id="menu-writing">写作</a></li>
@@ -33,7 +32,7 @@
 		<script type="text/javascript" src="js/common.js"></script>
 		<div style="text-align:center; font:normal 14px/24px 'MicroSoft YaHei';" class="container" >
 			
-			<div class="grid"  id="div-travel" style="display:block;">
+			<div class="grid"  id="div-travel" style="display:none;">
 				<figure class="effect-sadie">
 					<img src="img/beihai.jpg" alt="Seattle"/>
 			  		<figcaption>
@@ -177,7 +176,6 @@
 		</div>	
 	</body>
 	<script>
-	/*
 		$("#menu-home").on("click",function(){
 			$(".header_menu_list").removeClass("header_menu_list_checked");
 			$(this).parent().addClass("header_menu_list_checked");
@@ -186,11 +184,11 @@
 			$("#div-reading").hide();
 			$("#div-writing").hide();
 			$("#div-about").hide();
-		});*/
+		});
 		$("#menu-travel").on("click",function(){
 			$(".header_menu_list").removeClass("header_menu_list_checked");
 			$(this).parent().addClass("header_menu_list_checked");
-			//$("#bg").hide();
+			$("#bg").hide();
 			$("#div-travel").show();
 			$("#div-reading").hide();
 			$("#div-writing").hide();
@@ -199,7 +197,7 @@
 		$("#menu-reading").on("click",function(){
 			$(".header_menu_list").removeClass("header_menu_list_checked");
 			$(this).parent().addClass("header_menu_list_checked");
-			//$("#bg").hide();
+			$("#bg").hide();
 			$("#div-travel").hide();
 			$("#div-reading").show();
 			$("#div-writing").hide();
@@ -208,7 +206,7 @@
 		$("#menu-writing").on("click",function(){
 			$(".header_menu_list").removeClass("header_menu_list_checked");
 			$(this).parent().addClass("header_menu_list_checked");
-			//$("#bg").hide();
+			$("#bg").hide();
 			$("#div-travel").hide();
 			$("#div-reading").hide();
 			$("#div-writing").show();
@@ -217,7 +215,7 @@
 		$("#menu-about").on("click",function(){
 			$(".header_menu_list").removeClass("header_menu_list_checked");
 			$(this).parent().addClass("header_menu_list_checked");
-			//$("#bg").hide();
+			$("#bg").hide();
 			$("#div-travel").hide();
 			$("#div-reading").hide();
 			$("#div-writing").hide();
