@@ -7,24 +7,26 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 		<style>
-			h1,h2,h3{ line-height:40px} 
+			h1,h2,h3{ line-height:40px;} 
+			.hand{color:#fff;}
+			.hand:hover{color:#0099cc;cursor:pointer}
 		</style>
 	</head>
-	<body>
+	<body style="overflow: hidden;">
 		<div id="bg">
-			<img class="bg" id="bg_04" src="images/menu/04.jpg">
 			<img class="bg" id="bg_01" src="images/menu/01.jpg">
 			<img class="bg" id="bg_02" src="images/menu/02.jpg">
 			<img class="bg" id="bg_03" src="images/menu/03.jpg">
+			<img class="bg" id="bg_04" src="images/menu/04.jpg">
 		</div>
 		<div  id="header">
 			<div id="header_nav">
 			   <ul id="header_menu_list">
-				   <li class="header_menu_list header_menu_list_checked header_menu_list_fi"><a href="#" id="menu-home">Home</a></li>
-				   <li class="header_menu_list"><span></span><a href="#" id="menu-travel">旅行</a></li>
-				   <li class="header_menu_list"><span></span><a href="#" id="menu-reading">读书</a></li>
-				   <li class="header_menu_list"><span></span><a href="#" id="menu-writing">写作</a></li>
-				   <li class="header_menu_list"><span></span><a href="#" id="menu-about">关于</a></li>
+				   <li class="header_menu_list header_menu_list_checked header_menu_list_fi"><p class="hand" id="menu-home">Home</p></li>
+				   <li class="header_menu_list"><span></span><p class="hand" id="menu-travel">旅行</p></li>
+				   <li class="header_menu_list"><span></span><p class="hand" id="menu-reading">读书</p></li>
+				   <li class="header_menu_list"><span></span><p class="hand" id="menu-writing">写作</p></li>
+				   <li class="header_menu_list"><span></span><p class="hand" id="menu-about">关于</p></li>
 				   <div class="clear"></div>
 			   </ul>
 			</div>
@@ -33,145 +35,164 @@
 		<div style="text-align:center; font:normal 14px/24px 'MicroSoft YaHei';" class="container" >
 			
 			<div class="grid"  id="div-travel" style="display:none;">
-				<figure class="effect-sadie">
-					<img src="img/beihai.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>北海 <span>涠洲岛</span></h3>
-						<p>这是一个历史悠久的岛屿，也是广西最大的海岛。<br/>这里的生活很慢，还有一座古老的天主教堂。</p>
-                    </figcaption>			
-				</figure>
-				<figure class="effect-oscar">
-					<img src="img/yingtan.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>北海 <span>银滩</span></h3>
-						<p>这里有一片很大的沙滩。<br/>可以尽情的玩耍，游泳。老城区的海鲜好吃而又便宜。</p>
-                    </figcaption>			
-				</figure>
-				<figure class="effect-lily">
-					<img src="img/lijiang.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>阳朔 <span>遇龙河</span></h3>
-						<p>遇龙河是漓江在阳朔境内最长的一条支流。<br/>竹筏漂流是这里的一大特色。</p>
-              		</figcaption>			
-				</figure>
-				<figure class="effect-layla">
-					<img src="img/qinghaihu.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>青海湖 <span></span></h3>
-						<p>位于海南藏族自治州的这片青海湖，<br/>清澈见底。</p>
-                    </figcaption>			
-				</figure>
-				<figure class="effect-zoe">
-					<img src="img/qinghaicaihong.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>青海湖 <span>金沙湾</span></h3>
-						<!--<span class="icon-heart"></span>
-						<span class="icon-eye"></span>
-						<span class="icon-paper-clip"></span>-->
-						<p>从金沙湾往黑马河镇方向出发时，偶遇彩虹。</p>
-                    </figcaption>			
-				</figure>
-				<figure class="effect-dexter">
-					<img src="img/qiliancaoyuan.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>青海湖 <span>蒙古包</span></h3>
-						<p>游牧的人们，带着蒙古包去周游这片世界。</p>
-                    </figcaption>			
-				</figure>
-				<figure class="effect-marley">
-					<img src="img/qianlianshan.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>海北藏族自治州 <span>祁连山脉</span></h3>
-						<p>这是一片常年积雪的山脉。</p>
-                    </figcaption>			
-				</figure>
-				
-				<figure class="effect-ruby">
-					<img src="img/zhangyedanxia.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>张掖 <span>七彩丹霞</span></h3>
-						<p>这里的丘陵造型奇特，色彩斑斓。</p>
-                    </figcaption>			
-				</figure>
-				<figure class="effect-roxy">
-					<img src="img/guilin.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>桂林 <span></span></h3>
-						<p>这是在冠岩去往阳朔的路上。</p>
-                    </figcaption>			
-				</figure>
-				<figure class="effect-bubba">
-					<img src="img/qiandaohu.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>淳安 <span>千岛湖</span></h3>
-						<p>在梅峰岛上，可以俯视大片的岛屿。</p>
-                    </figcaption>			
-				</figure>
-				<figure class="effect-romeo">
-					<img src="img/taihu.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>无锡 <span>太湖</span></h3>
-						<p>这是在鼋头渚。</p>
-                    </figcaption>			
-				</figure>
-				<figure class="effect-honey">
-					<img src="img/chakayanhu.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>海西蒙古族藏族自治州 <span>茶卡盐湖</span></h3>
-						<p>盐湖可以投映出身影，犹如一面镜子。</p>
-                    </figcaption>			
-				</figure>
-				<figure class="effect-sarah">
-					<img src="img/dongjidao.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>舟山 <span>东极岛</span></h3>
-						<p>看过后会无期的就知道这个岛屿了。</p>
-                    </figcaption>			
-				</figure>
-				<figure class="effect-chico">
-					<img src="img/qingbangdao.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>舟山 <span>青浜岛</span></h3>
-						<p>这是一座偏静的小岛。<br/>车马邮件都很慢。</p>
-                    </figcaption>			
-				</figure>
-				<figure class="effect-milo">
-					<img src="img/huangpujiang.jpg" alt="Seattle"/>
-			  		<figcaption>
-						<h3>上海 <span>外白渡桥</span></h3>
-						<p>这是一座浮在黄浦江上久远的铁桥。</p>
-                    </figcaption>			
-				</figure>
+				<h3 style="height:50px">年轻时的流浪，是一生的养分。</h3>
+				<div id="show-travel" style="overflow:auto;">
+					<figure class="effect-sadie">
+						<img src="img/beihai.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>北海 <span>涠洲岛</span></h3>
+							<p>这是一个历史悠久的岛屿，也是广西最大的海岛。<br/>这里的生活很慢，还有一座古老的天主教堂。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-oscar">
+						<img src="img/yingtan.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>北海 <span>银滩</span></h3>
+							<p>这里有一片很大的沙滩。<br/>可以尽情的玩耍，游泳。老城区的海鲜好吃而又便宜。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-lily">
+						<img src="img/lijiang.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>阳朔 <span>遇龙河</span></h3>
+							<p>遇龙河是漓江在阳朔境内最长的一条支流。<br/>竹筏漂流是这里的一大特色。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-layla">
+						<img src="img/qinghaihu.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>青海湖 <span></span></h3>
+							<p>位于海南藏族自治州的这片青海湖，<br/>清澈见底。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-zoe">
+						<img src="img/qinghaicaihong.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>青海湖 <span>金沙湾</span></h3>
+							<!--<span class="icon-heart"></span>
+							<span class="icon-eye"></span>
+							<span class="icon-paper-clip"></span>-->
+							<p>从金沙湾往黑马河镇方向出发时，偶遇彩虹。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-dexter">
+						<img src="img/qiliancaoyuan.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>青海湖 <span>蒙古包</span></h3>
+							<p>游牧的人们，带着蒙古包去周游这片世界。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-marley">
+						<img src="img/qianlianshan.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>海北藏族自治州 <span>祁连山脉</span></h3>
+							<p>这是一片常年积雪的山脉。</p>
+						</figcaption>			
+					</figure>
+					
+					<figure class="effect-ruby">
+						<img src="img/zhangyedanxia.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>张掖 <span>七彩丹霞</span></h3>
+							<p>这里的丘陵造型奇特，色彩斑斓。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-roxy">
+						<img src="img/guilin.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>桂林 <span></span></h3>
+							<p>这是在冠岩去往阳朔的路上。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-bubba">
+						<img src="img/qiandaohu.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>淳安 <span>千岛湖</span></h3>
+							<p>在梅峰岛上，可以俯视大片的岛屿。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-romeo">
+						<img src="img/taihu.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>无锡 <span>太湖</span></h3>
+							<p>这是在鼋头渚。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-honey">
+						<img src="img/chakayanhu.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>海西蒙古族藏族自治州 <span>茶卡盐湖</span></h3>
+							<p>盐湖可以投映出身影，犹如一面镜子。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-sarah">
+						<img src="img/dongjidao.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>舟山 <span>东极岛</span></h3>
+							<p>看过后会无期的就知道这个岛屿了。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-chico">
+						<img src="img/qingbangdao.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>舟山 <span>青浜岛</span></h3>
+							<p>这是一座偏静的小岛。<br/>车马邮件都很慢。</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-milo">
+						<img src="img/huangpujiang.jpg" alt="Seattle"/>
+						<figcaption>
+							<h3>上海 <span>外白渡桥</span></h3>
+							<p>这是一座浮在黄浦江上久远的铁桥。</p>
+						</figcaption>			
+					</figure>
+				</div>
 			</div>
 			
 			<!--reading-->
-			<div id="div-reading" style="display:none;padding: 50px;">
-			<h1>青春</h1>
-			<h2>席慕容</h2>
-			<h3>所有的结局都已写好 </h3>
-			<h3>所有的泪水也都已启程 </h3>
-			<h3>却忽然忘了是怎麽样的一个开始 </h3>
-			<h3>在那个古老的不再回来的夏日 </h3>
-			<h3>无论我如何地去追索 </h3>
-			<h3>年轻的你只如云影掠过 </h3>
-			<h3>而你微笑的面容极浅极淡 </h3>
-			<h3>逐渐隐没在日落后的群岚 </h3>
-			<h3>遂翻开那发黄的扉页 </h3>
-			<h3>命运将它装订得极为拙劣 </h3>
-			<h3>含著泪 我一读再读 </h3>
-			<h3>却不得不承认 </h3>
-			<h3>青春是一本太仓促的书 </h3>
+			<div id="div-reading" style="display:none;padding-top: 50px;color: aliceblue;background:url(images/menu/04.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+				<h1>青春</h1>
+				<h2>席慕容</h2>
+				<h3>所有的结局都已写好 </h3>
+				<h3>所有的泪水也都已启程 </h3>
+				<h3>却忽然忘了是怎麽样的一个开始 </h3>
+				<h3>在那个古老的不再回来的夏日 </h3>
+				<h3>无论我如何地去追索 </h3>
+				<h3>年轻的你只如云影掠过 </h3>
+				<h3>而你微笑的面容极浅极淡 </h3>
+				<h3>逐渐隐没在日落后的群岚 </h3>
+				<h3>遂翻开那发黄的扉页 </h3>
+				<h3>命运将它装订得极为拙劣 </h3>
+				<h3>含著泪 我一读再读 </h3>
+				<h3>却不得不承认 </h3>
+				<h3>青春是一本太仓促的书 </h3>
 			</div>
 			
 			<!--writing-->
-			<div id="div-writing" style="display:none;padding: 20px;">
-				<h3>还有好多故事在路中。。。。。。。。。。。。。。</h3>
-				
+			<div id="div-writing" style="display:none;padding: 20px;color: black;background:url(img/beihai.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+				<h3>面朝大海，春暖花开</h3>
+				<h3></h3>
+				<h3>从明天起，做一个幸福的人</h3>
+				<h3>喂马、劈柴，周游世界</h3>
+				<h3></h3>
+				<h3>从明天起，关心粮食和蔬菜</h3>
+				<h3>我有一所房子，面朝大海，春暖花开</h3>
+				<h3></h3>
+				<h3>从明天起，和每一个亲人通信</h3>
+				<h3>告诉他们我的幸福</h3>
+				<h3>那幸福的闪电告诉我的</h3>
+				<h3>我将告诉每一个人</h3>
+				<h3>给每一条河每一座山取一个温暖的名字</h3>
+				<h3>陌生人，我也为你祝福</h3>
+				<h3>愿你有一个灿烂的前程</h3>
+				<h3>愿你有情人终成眷属</h3>
+				<h3>愿你在尘世获得幸福</h3>
+				<h3>我只愿面朝大海，春暖花开</h3>
 			</div>
 			
 			<!--about-->
-			<div id="div-about" style="display:none;padding: 20px;">
-				<h3>等待更新。。。。。。。。。。。。。。</h3>
+			<div id="div-about" style="display:none;padding: 20px;background:url(img/qinghaihu.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+				<h3>什么叫做救自己呢？就是忠实自己的感觉，认真做每一件事，不要烦，不要放弃，不要敷衍。</h3><h3>哪怕写文章时标点符号弄清楚，不要有错别字——这就是我所谓的自己救自己。</h3>
 			</div>
 		</div>	
 	</body>

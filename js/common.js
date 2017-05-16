@@ -74,22 +74,27 @@ function pageAdjust()
 	/*
 	 *nav_list的调整
 	 */
-	var width_header_menu_list = $('#header').width() - 416;
+	var width_header_menu_list = $('#header').width() - 436;
 	$('#header_menu_list').width(width_header_menu_list);
-	var left_header_menu_list  = (width_header_menu_list*0.28-12)/2+208;
+	var left_header_menu_list  = (width_header_menu_list*0.28-12)/2+298;
 	$('#header_menu_list').css('marginLeft', left_header_menu_list);
 
 	//section_button_list位置调整
 	//console.log(viewHeight/2-50) 
     $("#section_button").css('top', viewHeight/2-50 + "px");
 
-	 for (var i = 0; i <6; i++) {
+	 for (var i = 0; i <5; i++) {
 	 	$('.header_detail_container').eq(i).css('left', 1000*i+'px');
 	 }
     //调整背景
 
     $('#bg').height(viewHeight);
     $('.bg').height(viewHeight);
+	
+	$('#show-travel').height(viewHeight-150);
+	$('#div-reading').height(pageHeight);
+	$('#div-writing').height(pageHeight);
+	$('#div-about').height(pageHeight);
 }
 
 
