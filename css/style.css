@@ -9,11 +9,11 @@ li{ list-style: none; }
 .construct{ width: 100%; position: relative; }
 
 
-#bg{ width: 100%; height: auto; background:url('../images/menu/06.jpg'); background-size: cover; position: absolute; left:0; top: 0; z-index: 0; overflow:hidden;}
+#bg{ width: 100%; height: auto; background:url('../images/menu/05.jpg'); background-size: cover; position: absolute; left:0; top: 0; z-index: 0; overflow:hidden;}
 .bg{width: 100%; height: auto; position: absolute;}
 #bg_01{background:url('../images/menu/02.jpg'); background-size: cover;}
 #bg_02{background:url('../images/menu/03.jpg'); background-size: cover;}
-#bg_03{background:url('../images/menu/06.jpg'); background-size: cover;}
+#bg_03{background:url('../images/menu/05.jpg'); background-size: cover;}
 #header{ /*background-color: #f9f9f9;*/ height: 108px; border-bottom: #c9c9c9 2px solid; position: relative; z-index: 10; background:url('../images/menu/nav_bg.png'); background-repeat: repeat;}
 #header_logo{width: 206px; height: 65px; position: absolute; top: 24px; left: 2px; background-image: url('../images/menu/index_logo.png');}
 #header_nav{position: absolute; top: 40px; width: 100%;}
